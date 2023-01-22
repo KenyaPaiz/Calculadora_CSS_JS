@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+*{
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #A37C4C;
+}
+
+header{
+    margin: 25px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: normal;
+    margin-top: 50px;
+}
+
+.container{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculadora{
+    background: #423735;
+    padding: 20px;
+    --angle: 0deg;
+    /*border-image: linear-gradient(
+        var(--angle), rgb(16, 105, 98), rgb(148, 48, 48), rgb(60, 124, 60)
+    ) 1;
+    animation: 3s rotate linear infinite;*/
+    border-radius: 30px;
+}
+
+/*@keyframes rotate{
+    to {
+        --angle: 360deg;
+    }
+}
+
+@property --angle{
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}*/
+
+/** Botones */
+.texto {
+    width: 160px;
+    height: 45px;
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.button_limpiar{
+    width: 50px;
+    height: 50px;
+    background: #b11c1c;
+    border: 1px solid black;
+    color: white;
+    font-size: 1rem;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.button_limpiar:hover{
+    box-shadow: 0 0 10px 0 rgb(134, 58, 58) inset,
+                0 0 10px 4px rgb(134, 58, 58);
+}
+
+.button_number{
+    width: 50px;
+    height: 50px;
+    background: #ece2e2;
+    margin: 1.5px;
+    border: 1px solid #0c0c0c;
+    color: black;
+    font-size: 1rem;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.button_number:hover{
+    box-shadow: 0 0 10px 0 rgb(126, 118, 118) inset,
+                0 0 10px 4px rgb(126, 118, 118);
+}
+
+.button_operador{
+    width: 50px;
+    height: 50px;
+    background: #5b8b47;
+    margin: 1.5px;
+    border: 1px solid #0c0c0c;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.button_operador:hover{
+    box-shadow: 0 0 10px 0 rgb(66, 92, 55) inset,
+                0 0 10px 4px rgb(66, 92, 55);
+}
+
+.resultado{
+    width: 50px;
+    height: 50px;
+    background: #2e597c;
+    margin: 1.5px;
+    border: 1px solid #0c0c0c;
+    color: white;
+    font-size: 1rem;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.resultado:hover{
+    box-shadow: 0 0 10px 0 rgb(27, 53, 73) inset,
+                0 0 10px 4px rgb(27, 53, 73);
+}
